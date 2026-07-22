@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd" version="2.2">
+    <persistence-unit name="IFBA-PU">
+        <properties>
+            <!-- Propriedades de Conexão com o Banco de Dados -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/meu_banco2? createDatabaseIfNotExist=
+true&amp;useTimezone=true&amp;serverTimezone=UTC" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="0275" />
+
+            <!-- Dialeto do Hibernate para traduzir o SQL corretamente -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+
+            <!-- Atualiza ou cria as tabelas automaticamente com base nas suas classes @Entity -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            
+            <!-- Exibe o SQL gerado no console -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+            <!-- Carrega um script sql  -->
+            <!-- <property name="javax.persistence.sql-load-script-source" value="META-INF/dados-iniciais.sql"/> -->
+        </properties>
+    </persistence-unit>
+</persistence>
