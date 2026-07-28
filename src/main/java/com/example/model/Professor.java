@@ -25,47 +25,7 @@ public class Professor{
 
     }
 
-    /**** Metodos getters e Setters dos atributos (Encapsulamento) */
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSiape() {
-        return siape;
-    }
-
-    public void setSiape(String siape) {
-        this.siape = siape;
-    }
-
     public double calcularBonus() {
         return 2000 * 1.10;
     }
-
-    public String toString() {
-        return "Professor - id=" + id + ", nome=" + nome + ", email=" + email + ", siape=" + siape;
-    }
-
-    
-    
 }
