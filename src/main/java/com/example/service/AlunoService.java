@@ -48,7 +48,8 @@ public class AlunoService {
         String cpf = scanner.nextLine();
         System.out.print("Digite o email do aluno: ");
         String email = scanner.nextLine();
-        
+
+        /*
         System.out.println("\n=== Lista de Cursos ===");
         for(Curso c : listaCursos) {
             System.out.println("      " + c);
@@ -63,8 +64,9 @@ public class AlunoService {
                 break;
             }
         }
+        */
 
-        Aluno novoAluno = new Aluno(0, nome, email, idade, cpf, cursoSelecionado);
+        Aluno novoAluno = new Aluno(0, nome, email, idade, cpf);
         repoAluno.salvar(novoAluno);
       
         System.out.println("Aluno adicionado com sucesso! ID: " + novoAluno.getId());
@@ -136,6 +138,7 @@ public class AlunoService {
             alunoSelecionado.setEmail(email);
         }
 
+        /*
         System.out.println("\n=== Lista de Cursos ===");
         for(Curso c : listaCursos) {
             System.out.println("      " + c);
@@ -152,7 +155,7 @@ public class AlunoService {
         }
         if(idCurso > 0)
             alunoSelecionado.setCurso(cursoSelecionado);
-
+        */
 
         scanner.nextLine();
         
