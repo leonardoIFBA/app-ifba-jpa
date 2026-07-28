@@ -17,13 +17,13 @@ public class Aluno{
     /*** Construtor vazio e com parametros, auxiliam na criação dos objetos alunos */
     public Aluno(){}
 
-    public Aluno(int idade, String cpf, Curso curso) {
+    public Aluno(int idade, String cpf/*, Curso curso*/) {
               this.idade = idade;
         this.cpf = cpf;
         //this.curso = curso;
     }
 
-    public Aluno(int id, String nome, String email, int idade, String cpf, Curso curso) {
+    public Aluno(int id, String nome, String email, int idade, String cpf/*, Curso curso*/) {
         this.id = id;
         this.nome = nome;
         this.email = email;
